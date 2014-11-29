@@ -1,0 +1,1 @@
+1.) Assume that a professor can run more than one department 
