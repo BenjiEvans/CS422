@@ -10,7 +10,7 @@ CREATE TABLE Grad_Student(
   age Integer Not Null,
   gender char(1) Not Null,
   degree varchar(32) Not Null,
-  adviser Integer Not Null,
+  adviser Integer Null Unique,
   major Integer Not Null, 
   Foreign Key (adviser) References Grad_Student(ssn) ON Delete Restrict ON Update Cascade
   -- add foreign key 
@@ -77,4 +77,4 @@ ADD Foreign Key (principal_invest) References Professor(ssn) ON Delete Restrict 
 ALTER TABLE Professor
 ADD Foreign Key (works_in) References Department(dept_num) ON Delete Restrict ON Update Cascade;
 
-
+-- Add
