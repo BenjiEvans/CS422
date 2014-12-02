@@ -1,8 +1,9 @@
 drop table if exists Grad_Student Cascade;
 drop table if exists Project Cascade;
-drop table if exists Project_info Cascade;
 drop table if exists Professor Cascade;
 drop table if exists Department Cascade;
+drop table if exists Grad_works Cascade;
+drop table if exists Works_on Cascade;
 
 CREATE TABLE Grad_Student(
   ssn Integer primary key,  
@@ -66,6 +67,13 @@ INSERT INTO Professor values(456, 'Kate', 'English', 'Rank 1', 51, 'F', 200);
 INSERT INTO Professor values(890, 'Jeff', 'English', 'Rank 2', 62, 'M', 200);
 INSERT INTO Professor values(654, 'Lisa', 'History', 'Rank 1', 45, 'F', 300);
 INSERT INTO Professor values(198, 'John', 'History', 'Rank 2', 39, 'M', 300);
+INSERT INTO professor values(190, 'Juan', 'Embedded', 'Rank 2', 59, 'M', 100);
+INSERT INTO professor values(291, 'Jane', 'Algorithms', 'Rank 3', 44, 'F', 100);
+INSERT INTO professor values(374, 'Lane', 'History', 'Rank 3', 37, 'M', 200);
+INSERT INTO professor values(697, 'Anne', 'English', 'Rank 2', 63, 'F', 200);
+INSERT INTO professor values(156, 'Dave', 'History', 'Rank 2', 41, 'M', 300);
+INSERT INTO professor values(784, 'Katy', 'English', 'Rank 3', 33, 'F', 300);
+
 
 
 
